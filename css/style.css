@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+    background-color: white;
 }
 
 .intro .background{
@@ -7,6 +7,7 @@ body{
 }
 
 .intro h1{
+  margin:0 auto;
   font-size: 75px;
   font-family: Arial;
   color: white;
@@ -16,6 +17,61 @@ body{
 }
 
 .parallax-container {
-   height: "500px";
-   background-image: url("../img/gaming_campus.jpg")
+   height: 500px;
  }
+
+.row_container{
+  height: 400px;
+}
+
+h2{
+  margin : 0 auto;
+  font-size : 22px;
+}
+
+.profile{
+  margin-left: 10%;
+  margin-top: 10%;
+  border : 1px solid black;
+  border-top-left-radius:25%;
+  border-top-right-radius:25%;
+  border-bottom-left-radius:25%;
+  border-bottom-right-radius:25%;
+  background: url("../img/background.jpg")
+}
+
+.profile a{
+  margin-left : 70%;
+}
+
+ .profile .logo{
+   display: flex;
+   flex-direction: row;
+   height :100px;
+   width :150px;
+ }
+
+.profile p{
+  text-align:center;
+  font-size: 18px;
+  color : white;
+  text-shadow: 1px 3px 5px black;
+}
+
+.whitecol{
+  border-left: 1px solid white;
+}
+
+.section_white{
+  border-top: 1rem;
+  border-bottom: 1rem;
+  background-color: white;
+}
+
+.row_container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
