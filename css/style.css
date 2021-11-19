@@ -1,9 +1,54 @@
 body{
-    background-color: white;
+  background-color: black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, white, black 30%);
+  opacity : 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family : Metal Mania;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 .intro .background{
-  background-color : grey;
+  background-image: -webkit-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: linear-gradient(to bottom, #0CB8E6, rgba(255,255,255,0));
 }
 
 .intro h1{
@@ -11,22 +56,27 @@ body{
   font-size: 75px;
   font-family: Arial;
   color: white;
-  text-shadow: 1px 5px 3px black;
+  text-shadow: 1px 5px 3px grey;
   text-align : center;
   padding-bottom: 10px;
 }
 
 .parallax-container {
-   height: 500px;
- }
+  height: 500px;
+}
+
+.parallax-container .section_white{
+
+}
 
 .row_container{
   height: 400px;
 }
 
-h2{
-  margin : 0 auto;
-  font-size : 22px;
+.row_container h2{
+ text-align: center;
+ font-size: 25px;
+ text-shadow: 1px 2px 2px grey;
 }
 
 .profile{
@@ -44,18 +94,17 @@ h2{
   margin-left : 70%;
 }
 
- .profile .logo{
-   display: flex;
-   flex-direction: row;
-   height :100px;
-   width :150px;
- }
+.profile .logo{
+  display: flex;
+  flex-direction: row;
+  height :100px;
+  width :150px;
+}
 
-.profile p{
+.project p{
   text-align:center;
   font-size: 18px;
   color : white;
-  text-shadow: 1px 3px 5px black;
 }
 
 .whitecol{
@@ -74,4 +123,35 @@ h2{
   margin-bottom: 20px;
   margin: 0 auto;
   max-width: 1280px;
+}
+
+.projects h3{
+  text-align: center;
+  font-size: 18px;
+  color : white;
+  text-shadow: 1px 1px 1px orange;
+}
+
+.backgroundcol{
+  background-image : url("../img/backgroundcol.jpg");
+}
+
+.cutline1{
+  background-image: -webkit-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
+  background-image: -moz-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
+  background-image: -ms-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
+  background-image: -o-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
+  background-image: linear-gradient(to top, #0CB8E6, rgba(0,255,255,1));
+  width : 100%;
+  height : 10px;
+}
+
+.cutline2{
+  background-image: -webkit-linear-gradient(top, #0CB8E6, rgba(255,255,255,1));
+  background-image: -moz-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
+  background-image: linear-gradient(to bottom, #0CB8E6, rgba(255,255,255,0));
+  width : 100%;
+  height : 10px;
 }
