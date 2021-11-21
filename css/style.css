@@ -4,7 +4,7 @@ body{
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -125,33 +125,23 @@ body{
   max-width: 1280px;
 }
 
-.projects h3{
-  text-align: center;
-  font-size: 18px;
-  color : white;
-  text-shadow: 1px 1px 1px orange;
-}
-
-.backgroundcol{
+.project_deco .backgroundcol{
   background-image : url("../img/backgroundcol.jpg");
+  height : 300px;
 }
 
-.cutline1{
-  background-image: -webkit-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
-  background-image: -moz-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
-  background-image: -ms-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
-  background-image: -o-linear-gradient(bottom, #0CB8E6, rgba(0,255,255,1));
-  background-image: linear-gradient(to top, #0CB8E6, rgba(0,255,255,1));
-  width : 100%;
-  height : 10px;
+.project_deco .sidecol1{
+  background: linear-gradient(to bottom right, blue, white);
+  height : 300px;
 }
 
-.cutline2{
-  background-image: -webkit-linear-gradient(top, #0CB8E6, rgba(255,255,255,1));
-  background-image: -moz-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
-  background-image: -ms-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
-  background-image: -o-linear-gradient(top, #0CB8E6, rgba(255,255,255,0));
-  background-image: linear-gradient(to bottom, #0CB8E6, rgba(255,255,255,0));
-  width : 100%;
-  height : 10px;
+.project_deco .sidecol2{
+  background: linear-gradient(to bottom left, blue, white);
+  height : 300px;
+}
+
+.cutline{
+    height : 20px;
+    width : 100%;
+    background-image: linear-gradient(to top, black, #0CB8E6, skyblue);
 }
